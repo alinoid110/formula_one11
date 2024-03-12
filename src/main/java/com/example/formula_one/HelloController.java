@@ -28,7 +28,7 @@ public class HelloController {
     public static boolean forward = false;
     public static boolean back = false;
     private int player_speed = 3;
-    private int opponent_speed = 3;
+    private  int opponent_speed = 3;
 
     AnimationTimer timer = new AnimationTimer() {
         @Override
@@ -39,8 +39,7 @@ public class HelloController {
             if (back)
                 player.setLayoutX(player.getLayoutX() + player_speed);
             if (right)
-                if (player.getLayoutY() != opponent.getLayoutY())
-                    player.setLayoutY(player.getLayoutY() + player_speed);
+                player.setLayoutY(player.getLayoutY() + player_speed);
             if (left)
                 player.setLayoutY(player.getLayoutY() - player_speed);
         }
